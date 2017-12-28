@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="233px" height="45px" viewBox="0 0 233 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1365.000000, -251.000000)">
+        <g id="Logo" transform="translate(1365.000000, 251.000000)">
+            <text id="Name" font-family="HelveticaNeue-Light, Helvetica Neue" font-size="20" font-weight="300" letter-spacing="4.16666651" fill="#FFFFFF">
+                <tspan x="48" y="30">CRYPTOMETR</tspan>
+                <tspan x="220.066665" y="30" letter-spacing="3.47222209">Y</tspan>
+            </text>
+            <g id="Mark" fill="#C2D3DC">
+                <g id="Logo_piece">
+                    <polygon id="Path-2" points="12.4313726 0 0.228994509 21.9539215 8.41764755 21.9539215 12.4313726 13.2110108 17 10.0938775 17 2.45206801"></polygon>
+                </g>
+                <g id="Logo_piece" transform="translate(26.500000, 11.000000) scale(-1, 1) translate(-26.500000, -11.000000) translate(18.000000, 0.000000)">
+                    <polygon id="Path-2" points="12.4313726 0 0.228994509 21.9539215 8.41764755 21.9539215 12.4313726 13.2110108 17 10.0938775 17 2.45206801"></polygon>
+                </g>
+                <g id="Logo_piece" transform="translate(8.500000, 34.000000) scale(1, -1) translate(-8.500000, -34.000000) translate(0.000000, 23.000000)">
+                    <polygon id="Path-2" points="12.4313726 0 0.228994509 21.9539215 8.41764755 21.9539215 12.4313726 13.2110108 17 10.0938775 17 2.45206801"></polygon>
+                </g>
+                <g id="Logo_piece" transform="translate(26.500000, 34.000000) scale(-1, -1) translate(-26.500000, -34.000000) translate(18.000000, 23.000000)">
+                    <polygon id="Path-2" points="12.4313726 0 0.228994509 21.9539215 8.41764755 21.9539215 12.4313726 13.2110108 17 10.0938775 17 2.45206801"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

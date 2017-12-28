@@ -1,21 +1,71 @@
-import React from 'react';
+import React, {Component} from 'react';
 import injectSheet from 'react-jss';
+import axios from 'axios';
+import uuid from 'uuid/v4';
 
 const styles = theme => ({
   div: {
-    background: theme.colorPrimary,
     color: theme.colorText,
     padding: [10,40],
     fontWeight: 300,
-    minHeight: 400
+    minHeight: 400,
+  },
+  table: {
+    width: '100%',
+    "& .table__row": {
+      "& td": {
+        padding: 10,
+        background: theme.colorSecondary
+      },
+      "&:nth-child(even) td": {
+        background: theme.colorTertiary
+      }
+    }
   }
+
+
 })
 
-const Main = ({classes, children}) => (
-  <div className={classes.div}>
-    {children}
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus possimus iure, consequatur qui tempora nostrum fugit molestias repellat reprehenderit aperiam eaque molestiae, repudiandae harum perspiciatis rerum porro nobis. Ipsum, ut?</p>
-  </div>
-)
+class Main extends Component {
+
+  constructor( props ) {
+
+    super( props );
+    this.state = {
+      cryptos: []
+    }
+
+  }
+
+  componentDidMount() {
+    axios
+      .get('https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH,IOTA,REQ,VEN&tsyms=USD')
+      .then( res => {
+
+        const cryptos = res.data.DISPLAY;
+        this.setState({ cryptos: cryptos });
+
+
+      })
+  }
+
+  render() {
+    return(
+      <div className={this.props.classes.div}>
+        <table className={this.props.classes.table} cellPadding="0" cellSpacing="0">
+          <thead></thead>
+          <tbody>
+            {Object.keys(this.state.cryptos).map( (key) => (
+              <tr key={uuid()} className="table__row">
+                <td className={this.props.classes.td}>{key}</td>
+                <td className={this.props.classes.td}>{this.state.cryptos[key].USD.PRICE}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )
+  }
+} // Main Component
 
 export default injectSheet(styles)(Main)

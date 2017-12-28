@@ -9,10 +9,10 @@ const styles = theme => ({
     textAlign: 'right',
     borderRadius: [0,0,10,10]
   },
-  h1: {
+  span: {
     fontWeight: 300,
     textTransform: 'uppercase',
-    fontSize: 14,
+    fontSize: 12,
     margin: 0,
     letterSpacing: 2
   }
@@ -20,7 +20,9 @@ const styles = theme => ({
 
 const Footer = ({classes, children}) => (
   <footer className={classes.footer}>
-    <h1 className={classes.h1}>Donate</h1>
+    <span className={classes.span}>Settings</span>&nbsp;
+    <span className={classes.span}>Refresh</span>&nbsp;
+    <span className={classes.span}>Donate</span>
     {children}
   </footer>
 )

@@ -1,5 +1,6 @@
 import React from 'react';
 import injectSheet from 'react-jss';
+import logo from '../assets/images/logo.svg';
 
 const styles = theme => ({
   header: {
@@ -20,7 +21,7 @@ const styles = theme => ({
 
 const Header = ({classes, children}) => (
   <header className={classes.header}>
-    <h1 className={classes.h1}>Cryptometry</h1>
+    <img src={logo} className={classes.logo} alt="Cryptometry Logo" />
     {children}
   </header>
 )

@@ -1,6 +1,9 @@
 #design
 design_assets
 
+#Don't push build folder
+build
+
 # Logs
 logs
 *.log
