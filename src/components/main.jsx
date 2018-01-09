@@ -4,8 +4,26 @@ import axios from 'axios';
 import uuid from 'uuid/v4';
 
 const styles = theme => ({
+  '@font-face': [
+    {
+      fontFamily: 'Work Sans',
+      src: 'url("/assets/fonts/WorkSans-Light.ttf") format("truetype")',
+      fontWeight: 300
+    },
+    {
+      fontFamily: 'Work Sans',
+      src: 'url("/assets/fonts/WorkSans-Regular.ttf") format("truetype")',
+      fontWeight: 400
+    },
+    {
+      fontFamily: 'Work Sans',
+      src: 'url("/assets/fonts/WorkSans-Medium.ttf") format("truetype")',
+      fontWeight: 500
+    },
+  ],
   div: {
     color: theme.colorText,
+    fontFamily: 'Work Sans',
     padding: [10,40],
     fontWeight: 300,
     minHeight: 400,
@@ -14,7 +32,7 @@ const styles = theme => ({
     width: '100%',
     "& .table__row": {
       "& td": {
-        padding: 10,
+        padding: 5,
         background: theme.colorSecondary
       },
       "&:nth-child(even) td": {
