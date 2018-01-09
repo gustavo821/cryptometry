@@ -15,11 +15,11 @@ A desktop interface displaying cryptocurrency pricing, trends, and market caps u
 
 ## [IN PROGRESS] Wireframe
 Here's the idea for the general layout / positioning for the app. Some of the UI Elements have been designed and finalized along with font selection. Additional views are still to be added, and there's no doubt some routes / components missing from this preliminary wireframe.
-[[https://github.com/robinbastien/cryptometry/blob/master/src/assets/images/wireframe-preview.jpg|alt=wireframe]]
+![Wireframe](https://github.com/robinbastien/cryptometry/blob/master/src/assets/images/wireframe-preview.jpg)
 
 ## [IN PROGRESS] User Interface
 This needs to be updated to reflect the wireframe, and will not be until the wireframe is finalized.
-[[https://github.com/robinbastien/cryptometry/blob/master/src/assets/images/design-preview.jpg|alt=design]]
+![Design](https://github.com/robinbastien/cryptometry/blob/master/src/assets/images/design-preview.jpg)
 
 ## Installation
 Clone this repo:
